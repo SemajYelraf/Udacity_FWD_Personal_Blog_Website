@@ -1,0 +1,197 @@
+      @import url("https://fonts.googleapis.com/css?family=Oswald");
+      @import url("https://fonts.googleapis.com/css?family=Raleway");
+      @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+      
+/*      * {
+        border: 1px solid red;
+      }*/
+      
+      .blogContainer {
+         display: grid;
+         grid-template-columns: repeat(4, 1fr);
+         grid-template-rows: auto auto repeat(3, 1fr) auto;
+         grid-gap: 10px;
+         grid-template-areas:
+           "bn bn bn bn"
+           "hd hd hd hd"
+           "main main main sd"
+           "main main main sd"
+           "main main main sd"
+           "ft ft ft ft"
+           
+      }
+      
+      .navigation {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        background-color: #08B2E3;
+        border-radius: 5px;
+        font-family: Raleway;
+      }        
+      
+      .flexContainer {
+        display: flex;
+        flex-direction: row;
+        grid-area: hd;
+        justify-content: space-between;
+        align-items: flex-end;
+      }
+      
+     .banner {
+        grid-area: bn;
+        border-radius: 5px;
+        background-color: #08B2E3;
+      }
+      
+      .heading {
+         font-family: Oswald; 
+      }
+      
+      .header {
+        height: 2.5em;
+      }
+
+      .content {
+        grid-area: main;
+        border-radius: 5px;
+        background-color: #E8EEF2;
+        padding: 5%:
+      }
+      
+      .bio {
+        grid-area: sd;
+        border-radius: .25rem;
+        max-width: 375px;
+        max-height: 500px;
+        font-size: 14px;
+        background-color: #FFE74C;
+      }
+      
+      .avatar {
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;    
+      }
+      
+      .socialIcon {
+        width: 55px;
+        height: 55px;
+        background-position: center;
+        background-color: transparent;
+        margin: 5px;
+        border-radius: .25rem;
+      }
+      
+      .flexFooter {
+        display: flex;
+        flex-direction: row;
+        grid-area: ft;
+        justify-content: flex-end;
+        background-color: #FF5964; 
+        border-radius: 5px;
+      }
+      
+      .spacer {
+        width: 15px;
+      }
+      
+      .description {
+        font-family: Raleway;
+        font-style:italic;
+      }
+      
+      .title {
+        font-family: Oswald;    
+        /*font-size: 90px;*/
+        font-weight: bold;
+        font-size: 6vw;
+      }
+      
+      #subscribe {
+        font-family: Raleway;
+      }
+      
+      #date {
+        font-family: Raleway;
+      }
+      
+      #icon_1 {
+        background-image: url("../img/facebook.png");          
+      }
+      
+      #icon_2 {
+        background-image: url("../img/twitter.png");          
+      }
+      
+      #icon_3 {
+        background-image: url("../img/linkedin.png");          
+      }
+      
+      nav ul {
+        display: flex;
+        justify-content: left;
+      }
+            
+      nav ul li {
+        float: left;
+        border-right: 1px solid #bbb;
+      }
+      
+      nav ul li a {
+        display: block;
+        text-align: center;
+        color: #263409;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      
+      a:link {
+        text-decoration: none;
+      }    
+      
+      h1, h2, h3 {
+        font-family: Oswald, sans-serif;
+      }
+      
+      p {
+        white-space: normal;
+        font-family: Raleway, sans-serif;
+        text-indent: 20px;
+      }
+      
+      @media (max-width: 875px){
+        .blogContainer {
+           display: grid;
+           grid-template-columns: repeat(2, auto);
+           grid-template-rows: auto auto 20vh 20vh auto;
+           grid-gap: 10px;
+           grid-template-areas:
+             "bn bn"
+             "hd hd"
+             "main main"
+             "main main"
+             "main main"
+             "sd sd"
+             "ft ft"
+        }
+        
+        .content {
+          grid-area: main;
+          max-width: 875px;
+        }
+        
+        .bio {
+          grid-area: sd;
+          border-radius: .25rem;
+          max-width: 875px;
+        }
+        
+        .flexFooter {
+          justify-content: center;
+        }
+        
+        #about {
+          border-right: none;
+        }        
+      }

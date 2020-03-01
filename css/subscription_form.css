@@ -1,0 +1,10 @@
+    @import url("index.css");
+    
+    .formSubscription {
+       font-family: Raleway;   
+    }
+    
+    .info {
+        font-style: italic;
+        color: grey;
+    }

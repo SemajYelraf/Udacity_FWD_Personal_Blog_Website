@@ -1,0 +1,147 @@
+      @import url("https://fonts.googleapis.com/css?family=Oswald");
+      @import url("https://fonts.googleapis.com/css?family=Raleway");
+      @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+/*      * {
+        border: 1px solid red;
+      }*/
+      
+      .container{
+        display: grid;
+        grid-template-rows: auto 6em auto 3em;
+        grid-row-gap: 10px;
+        grid-template-areas:
+            "nav"
+            "hd"
+            "main"
+            "ft"
+      }
+      
+      .flexContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+      }
+      
+      .navigation {
+        grid-area: nav;
+        font-family: Raleway;
+      }
+      
+      .header {
+        grid-area: hd;
+        font-family: Oswald;
+        font-weight: bold;
+        font-size: 55px;
+        text-align: center;
+      }
+      
+      .contentBox {
+        grid-area: main;
+      }
+      
+      .card {
+        border: 1px solid #d3d3d3;
+        border-radius: 5px;
+        margin: 10px;
+        width: 23vw;
+        background-color: #FFE74C;
+        box-shadow: 0 8px 16px 0 grey;
+      }
+
+      .bgImg {
+        background-size: cover;
+        min-height: 180px;
+        background-position: center;
+        background-color: transparent;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+      }
+      
+      .caption {
+        font-family: Raleway;
+        font-size: 70%;
+        font-style: italic;
+      }
+
+      .content {
+        padding: 15px;
+      }
+      
+      #img_1 {
+        background-image: url("../img/turn-table.jpeg");          
+      }
+      
+      #img_2 {
+        background-image: url("../img/travel.jpeg");          
+      }
+      
+      #img_3 {
+        background-image: url("../img/dining.jpeg");          
+      }
+      
+      h3 {
+        font-family: Oswald;
+        font-size: 25px;
+      }
+      
+      p {
+        font-family: Raleway;    
+      }
+      
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        background-color: #08B2E3;
+        border-radius: 5px;
+      }
+      
+      li {
+        float: left;
+        border-right: 1px solid #bbb;
+      }
+      
+      li a {
+        display: block;
+        text-align: center;
+        color: #263409;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      
+      a {
+        text-decoration: none;
+      }
+      
+      button {
+        background-color: transparent;
+        border: 1px solid #000000;
+        padding: .5rem 1rem;
+        cursor: pointer;
+        border-radius: 5px; 
+        font-family: Raleway;
+      }
+      
+      footer {
+        grid-area: ft;
+        background-color: #FF5964;
+        border-radius: 5px;
+      }
+      
+      @media (max-width: 700px){      
+        .flexContainer {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;  
+        }
+        
+        .card {
+          width: 75%;
+        }
+        
+        #about {
+          border-right: none;
+        }
+      }

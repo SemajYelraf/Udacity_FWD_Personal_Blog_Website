@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="description" content="Blog Project" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../css/subscription_form.css" />
+        <title>FWD Blog Project</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="container">
+            <ul class="navigation">
+                <li id="home"><a href="index.html">Home</a></li>
+                <li id="archive"><a href="#archive">Archive</a></li>
+                <li id="contact"><a href="#contact">Contact</a></li>
+                <li id="about"><a href="#about">About</a></li>
+            </ul>  
+            <div class="header">Subscribe</div>
+            <form class="formSubscription">
+                <!-- First name-->
+                <label for="fname">First name:</label><br>
+                <input type="text" class="info" id="fname" value=" John" onfocus="this.value=''"><br><br>
+                
+                <!-- Last name-->
+                <label for="lname">Last name:</label><br>
+                <input type="text" class="info" id="lname" value=" Doe" onfocus="this.value=''"><br><br>
+                
+                <!-- Email -->
+                <label for="email">Enter your email:</label>
+                <input type="email" class="info" id="email" value=" jdoe@somewhere.com" onfocus="this.value=''" size="30"><br><br>
+                
+                <!-- Gender-->
+                <input type="radio" name="gender">
+                <label for="male">Male</label><br>
+                <input type="radio" name="gender">
+                <label for="female">Female</label><br>
+                <input type="radio" name="gender">
+                <label for="other">Other</label><br><br>
+                
+                <!-- Submit-->
+                <button><a href="#submit">Submit</a></button>                                
+            </form>
+            <footer></footer>
+            </div> <!-- class=""container" -->            
+        </div>
+    </body>
+</html>
