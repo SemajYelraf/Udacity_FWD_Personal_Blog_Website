@@ -1,10 +1,3 @@
-      @import url("https://fonts.googleapis.com/css?family=Oswald");
-      @import url("https://fonts.googleapis.com/css?family=Raleway");
-      @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
-      
-/*      * {
-        border: 1px solid red;
-      }*/
       
       .blogContainer {
          display: grid;
@@ -21,7 +14,7 @@
            
       }
       
-      .navigation {
+      .blogNavigation {
         list-style-type: none;
         margin: 0;
         padding: 0;
@@ -30,7 +23,7 @@
         font-family: Raleway;
       }        
       
-      .flexContainer {
+      .flexBlogContainer {
         display: flex;
         flex-direction: row;
         grid-area: hd;
@@ -48,18 +41,20 @@
          font-family: Oswald; 
       }
       
-      .header {
+      .blogHeader {
         height: 2.5em;
       }
 
-      .content {
+      .blogContent {
         grid-area: main;
         border-radius: 5px;
         background-color: #E8EEF2;
         padding: 5%:
       }
       
-      .bio {
+      .bioFlexContainer {
+        display: flex;
+        flex-direction: column;
         grid-area: sd;
         border-radius: .25rem;
         max-width: 375px;
@@ -99,6 +94,13 @@
       .description {
         font-family: Raleway;
         font-style:italic;
+        list-style-type: square;
+        padding-left: 20px;
+        display: block; 
+      }
+      
+      .description li {
+        float: none;    
       }
       
       .title {
@@ -106,7 +108,7 @@
         font-weight: bold;
         font-size: 6vw;
       }
-      
+
       #subscribe {
         font-family: Raleway;
       }
@@ -125,6 +127,15 @@
       
       #icon_3 {
         background-image: url("../img/linkedin.png");          
+      }
+      
+      #about {
+        margin-bottom: 5px;
+      }
+      
+      blockquote {
+        font-family: Raleway;
+        font-style: italic;
       }
       
       nav ul {

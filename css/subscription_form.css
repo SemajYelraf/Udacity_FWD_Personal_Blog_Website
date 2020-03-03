@@ -1,4 +1,4 @@
-    @import url("index.css");
+
     
     .formSubscription {
        font-family: Raleway;   
@@ -7,4 +7,9 @@
     .info {
         font-style: italic;
         color: grey;
+    }
+    
+    li {
+        float: left;
+        border-right: 1px solid #bbb;
     }
